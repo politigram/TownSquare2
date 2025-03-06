@@ -1,0 +1,27 @@
+📂 src
+ ├── 📂 components
+ │   ├── 📂 discussion
+ │   │   ├── DiscussionBoard.js  ✅ (Main discussion layout)
+ │   │   ├── PostInput.js        ✅ (User input for creating posts)
+ │   │   ├── DiscussionPost.js   ✅ (Single post component)
+ │   │   ├── ReplyThread.js      ✅ (Handles replies)
+ │   │   ├── SortingOptions.js   ✅ (Sort by Newest, Most Popular, etc.)
+ │   │   ├── LeftSidebar.js      ✅ (Filters, discussion types)
+ │   │   ├── RightSidebar.js     ✅ (Trending, Leaderboard, Predictions)
+ │   │   ├── styles
+ │   │   │   ├── DiscussionBoard.module.css
+ │   │   │   ├── PostInput.module.css
+ │   │   │   ├── DiscussionPost.module.css
+ │   │   │   ├── ReplyThread.module.css
+ │   │   │   ├── SortingOptions.module.css
+ │   │   │   ├── LeftSidebar.module.css
+ │   │   │   ├── RightSidebar.module.css
+ │   ├── Navbar.js              ✅ (Header/Navbar)
+ │   ├── AuthModal.js           ✅ (Login/signup modal)
+ ├── 📂 pages
+ │   ├── discussion.js           ✅ (Page file that imports the discussion system)
+ ├── 📂 styles
+ │   ├── global.css              ✅ (Global styles)
+ ├── 📂 lib
+ │   ├── dbConnect.js            ✅ (MongoDB connection)
+ │   ├── api                     ✅ (Backend API routes)
