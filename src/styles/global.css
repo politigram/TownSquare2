@@ -1,0 +1,185 @@
+/* 🌍 Global Styles for TownSquare */
+/* Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&family=Open+Sans:wght@300;400;600&family=Space+Grotesk:wght@400;600&display=swap');
+
+:root {
+  /* 🎨 Color Palette */
+  --primary-blue: #1E73BE;       /* Deep Blue - Main */
+  --secondary-orange: #F4A259;   /* Warm Orange - CTA */
+  --background-light: #ECEFF1;   /* Light Background */
+  --dark-gray: #2C3E50;          /* Dark Text */
+  --light-blue: #A3D2E2;         /* Hover effects */
+  --white: #FFFFFF;
+  --shadow: rgba(0, 0, 0, 0.1);
+}
+
+/* 🌍 Apply Global Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Open Sans', sans-serif;
+  background-color: var(--background-light);
+  color: var(--dark-gray);
+  line-height: 1.6;
+}
+
+/* 🏛 Navbar */
+.navbar {
+  background-color: var(--primary-blue);
+  color: var(--white);
+  padding: 12px 24px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0px 4px 10px var(--shadow);
+}
+
+.navbar a {
+  color: var(--white);
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 600;
+  text-decoration: none;
+  margin: 0 12px;
+  transition: opacity 0.2s ease-in-out;
+}
+
+.navbar a:hover {
+  opacity: 0.8;
+}
+
+/* 🏛 Discussion Section */
+.discussion-container {
+  display: flex;
+  gap: 20px;
+  max-width: 1200px;
+  margin: auto;
+  padding: 20px;
+}
+
+/* 🗂 Left Sidebar */
+.left-sidebar {
+  width: 250px;
+  background: var(--white);
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0px 4px 10px var(--shadow);
+}
+
+.left-sidebar button {
+  display: block;
+  width: 100%;
+  background-color: var(--primary-blue);
+  color: var(--white);
+  border: none;
+  padding: 10px;
+  margin: 10px 0;
+  font-size: 14px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-family: 'Montserrat', sans-serif;
+  transition: background 0.3s ease;
+}
+
+.left-sidebar button:hover {
+  background-color: var(--secondary-orange);
+}
+
+/* 📝 Discussion Post */
+.post-container {
+  background: var(--white);
+  padding: 15px;
+  border-radius: 10px;
+  box-shadow: 0px 4px 10px var(--shadow);
+  margin-bottom: 15px;
+}
+
+.post-container h3 {
+  font-family: 'Montserrat', sans-serif;
+  color: var(--primary-blue);
+}
+
+.post-container p {
+  font-size: 14px;
+  color: var(--dark-gray);
+}
+
+/* 👍 Like / Dislike Buttons */
+.like-dislike {
+  display: flex;
+  gap: 10px;
+  margin-top: 10px;
+}
+
+.like-dislike button {
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-size: 18px;
+  color: var(--dark-gray);
+  transition: transform 0.2s ease-in-out;
+}
+
+.like-dislike button:hover {
+  transform: scale(1.1);
+}
+
+/* 🔥 Right Sidebar */
+.right-sidebar {
+  width: 300px;
+  background: var(--white);
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0px 4px 10px var(--shadow);
+}
+
+.right-sidebar h3 {
+  font-family: 'Montserrat', sans-serif;
+  color: var(--primary-blue);
+  margin-bottom: 10px;
+}
+
+/* 🏆 Leaderboard / Trending Topics */
+.leaderboard, .trending-topics, .political-predictions {
+  margin-bottom: 20px;
+  padding: 15px;
+  background: var(--light-blue);
+  border-radius: 10px;
+}
+
+/* 🔹 Trending Topics */
+.trending-topics a {
+  color: var(--secondary-orange);
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.trending-topics a:hover {
+  text-decoration: underline;
+}
+
+/* 🎯 Political Predictions */
+.political-predictions p {
+  font-size: 14px;
+  color: var(--dark-gray);
+}
+
+/* 📱 Responsive Design */
+@media (max-width: 1024px) {
+  .discussion-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .left-sidebar, .right-sidebar {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+
+  .post-container {
+    width: 100%;
+  }
+}

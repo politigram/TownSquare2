@@ -1,0 +1,9 @@
+/* src/styles/Discussion.module.css */
+.discussionContainer {
+    display: flex;
+    gap: 20px;
+    max-width: 1200px;
+    margin: auto;
+    padding: 20px;
+  }
+  

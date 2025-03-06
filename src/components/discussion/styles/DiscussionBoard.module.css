@@ -1,0 +1,14 @@
+.discussionContainer {
+  display: flex;
+  gap: 20px;
+  max-width: 1200px;
+  margin: auto;
+  padding: 20px;
+}
+
+.mainContent {
+  flex-grow: 1;
+  background: white;
+  padding: 15px;
+  border-radius: 10px;
+}
